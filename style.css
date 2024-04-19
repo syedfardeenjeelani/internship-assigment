@@ -1,0 +1,195 @@
+/* Mobile devices (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  /* Adjust layout and font sizes for mobile devices */
+  .container {
+    max-width: 90%;
+  }
+  .hero {
+    background-image: none;
+    height: 200px;
+  }
+  .hero h1 {
+    font-size: 24px;
+  }
+  .hero p {
+    font-size: 16px;
+  }
+  .featured-jobs {
+    grid-template-columns: 1fr;
+  }
+  .why-japan {
+    grid-template-columns: 1fr;
+  }
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header a {
+    margin-bottom: 1rem;
+  }
+  header nav {
+    display: none;
+  }
+  header .mobile-menu-button {
+    display: block;
+  }
+  header .mobile-menu {
+    display: none;
+  }
+}
+
+/* Tablet devices (min-width: 769px and max-width: 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Adjust layout and font sizes for tablet devices */
+  .container {
+    max-width: 80%;
+  }
+  .hero {
+    height: 300px;
+  }
+  .hero h1 {
+    font-size: 36px;
+  }
+  .hero p {
+    font-size: 20px;
+  }
+  .featured-jobs {
+    grid-template-columns: 1fr 1fr;
+  }
+  .why-japan {
+    grid-template-columns: 1fr 1fr;
+  }
+  .testimonials {
+    grid-template-columns: 1fr 1fr;
+  }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .mobile-menu-button {
+    display: none;
+  }
+  header .mobile-menu {
+    display: none;
+  }
+}
+
+/* Desktop devices (min-width: 1025px) */
+@media only screen and (min-width: 1025px) {
+  /* Adjust layout and font sizes for desktop devices */
+  .container {
+    max-width: 70%;
+  }
+  .hero {
+    height: 400px;
+  }
+  .hero h1 {
+    font-size: 48px;
+  }
+  .hero p {
+    font-size: 24px;
+  }
+  .featured-jobs {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .why-japan {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .testimonials {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .mobile-menu-button {
+    display: none;
+  }
+  header .mobile-menu {
+    display: none;
+  }
+}
+
+/* Mobile devices (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header a {
+    margin-bottom: 1rem;
+  }
+  header nav {
+    display: none;
+  }
+  header .mobile-menu-button {
+    display: block;
+  }
+  header .mobile-menu {
+    display: none;
+  }
+}
+
+/* Mobile menu button */
+.mobile-menu-button {
+  display: none;
+  background-color: #111;
+  color: #fff;
+  font-size: 24px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Mobile menu */
+.mobile-menu {
+  display: none;
+  background-color: #111;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-menu a {
+  color: #fff;
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+
+.mobile-menu a:hover {
+  color: #ddd;
+}
+
+/* Adjust background image for mobile devices */
+@media (max-width: 768px) {
+  .hero {
+    background-image: url("https://source.unsplash.com/1600x900/?japan,tokyo");
+    background-size: contain;
+    background-position: center;
+    background-attachment: scroll;
+  }
+}
